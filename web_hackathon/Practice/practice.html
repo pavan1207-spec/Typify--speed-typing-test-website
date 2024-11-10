@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Only Cards</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(209, 160, 67, 255);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: black;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            width: 100%;
+            border-radius: 15px; 
+            box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3); 
+            background-color: rgb(44, 36, 36);
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 4px 4px 10px 4px rgba(133, 10, 10, 0.1);
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h3 {
+            font-size: 22px;
+            color: #333;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .card p {
+            color: #666;
+            margin: 10px 0;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background-color: #f7f7f7;
+            border-top: 1px solid #ddd;
+        }
+
+        .card-footer button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .card-footer button:hover {
+            background-color: #218838;
+        }
+
+        /* Style for the fixed-position back button */
+        .back-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s;
+            text-decoration: none;
+        }
+
+        .back-button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h1>Practice Modules</h1>
+    <div class="cards-container">
+        <div class="card">
+            <h3>Practice 1</h3>
+            <p>A simple exercise to improve typing speed and accuracy. Practice sequences like "asdfgf" and ";lkjhj" to enhance muscle memory. Quick, effective, and easy to use.</p>
+            <div class="card-footer">
+                <a href="asdf.html"><button>Start</button></a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Practice 2</h3>
+            <p>A quick exercise to boost typing speed and accuracy. Practice the sequence "awerq" to improve finger placement and muscle memory. Simple and efficient!</p>
+            <div class="card-footer">
+                <a href="awer.html"><button>Start</button></a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Practice 3</h3>
+            <p>A focused exercise to enhance typing precision and speed. Practice "azxcvlkmn" to strengthen finger movement and improve muscle memory. Quick and effective!</p>
+            <div class="card-footer">
+                <a href="azxcv.html"><button>Start</button></a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Practice 4</h3>
+            <p>An exercise to improve typing speed and finger control. Practice sequences that use all the home row keys for improved accuracy.</p>
+            <div class="card-footer">
+                <a href="abcd.html"><button>Start</button></a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Practice 5</h3>
+            <p>An exercise to improve typing speed and accuracy with numbers. Practice sequences like "1234567890" to develop fluid key transitions and build muscle memory.</p>
+            <div class="card-footer">
+                <a href="numbers.html"><button>Start</button></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back button that links to interface.html -->
+    <a href="../interface.html" class="back-button">Go Back</a>
+</body>
+</html>

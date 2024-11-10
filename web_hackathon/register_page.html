@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        .back {
+            background-color: rgb(209, 160, 67);
+        }
+        .heading {
+            text-align: center;
+            font-size: xx-large;
+            color: rgb(57, 38, 138);
+                }
+        .leftside, .rightside {
+            width: 45%;
+            background-color: rgba(146, 107, 92, 0.5);
+            float: left;
+            margin: 10px;
+            padding: 20px;
+            font-family: monospace;
+            color: aliceblue;
+            border-radius: 10px;
+            height: 45vh;
+        }
+        .keela {
+            clear: both;
+            background-color: rgba(146, 107, 92, 0.5);
+            width: 60%;
+            margin: 30px auto;
+            padding: 20px;
+            font-family: monospace;
+            color: aliceblue;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 30%;
+        }
+        #sub {
+            background-color: #b86c43;
+            color: black;
+            width: 100px;
+            height: 35px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: small;
+        }
+        #sub:hover {
+            background-color: #56af5a;
+        }
+        input, textarea {
+            border-radius: 5px;
+            padding: 8px;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        form {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 10px;
+            align-items: center;
+        }
+        label {
+            text-align: right;
+            padding-right: 10px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;
+        }
+        .miniheading {
+            padding-left: 10px;
+            font-size: large;
+            font-weight: bold;
+        }
+        .radio-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .declaration {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body class="back">
+    <div>
+        <p class="heading">Registration Page</p> <br> <br>
+    </div>
+
+    <div class="leftside">
+        <p class="miniheading">Personal Details</p>
+        <form action="register.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob" id="dob">
+
+            <label for="gender">Gender:</label>
+            <div class="radio-group">
+                <input type="radio" id="male" name="gender" value="male"> Male
+                <input type="radio" id="female" name="gender" value="female"> Female
+            </div>
+
+            <label for="contact">Contact Number:</label>
+            <input type="tel" name="contact" id="contact">
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+
+            <label for="address">Address:</label>
+            <textarea name="address" id="address"></textarea>
+    </div>
+
+    <div class="rightside">
+        <p class="miniheading">Login Credentials</p>
+        <p style="text-align: center;">Create your own credentials by choosing a Username and password</p>
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username"> 
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password">
+
+            <label for="re_password">Re-enter Password:</label>
+            <input type="password" name="re_password" id="re_password">
+
+         <p style="text-align: center;">(The username should not start with any digits. The password should at least have one alphabet, one number, and one character)</p>
+    </div>
+    
+    <div class="keela">
+        <input type="checkbox" required> I hereby declare all the information stated above is true, and I also agree to all the Terms and Conditions.
+        <br><br>
+        <input type="submit" name="" id="sub" value="Submit">
+    </div>
+        </form>   
+</body>
+</html>

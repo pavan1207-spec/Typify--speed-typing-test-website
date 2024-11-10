@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StoryWeave Features</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: rgb(209, 160, 67, 255);
+
+        
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+    }
+    
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: rgb(2, 2, 171); /* Title color */
+    }
+    
+    .feature {
+      margin-bottom: 40px;
+      opacity: 0;
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+    
+    .feature h2 {
+      margin-bottom: 10px;
+    }
+    
+    .feature p {
+      margin: 0;
+    }
+    
+    .feature ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .feature li {
+      margin-bottom: 10px;
+    }
+
+    .go-back-button {
+      display: block;
+      width: fit-content;
+      padding: 10px 20px;
+      margin: 20px auto; /* Center the button */
+      background-color: rgb(2, 2, 171); /* Button color */
+      color: white; /* Text color */
+      text-align: center;
+      border-radius: 5px;
+      text-decoration: none; /* Remove underline */
+      font-size: 16px; /* Font size */
+      transition: background-color 0.3s; /* Smooth transition for hover effect */
+    }
+
+    .go-back-button:hover {
+      background-color: rgb(1, 1, 130); /* Darker shade on hover */
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>What you can do on Typify</h1>
+    
+    <div class="feature animate__animated animate__fadeInUp">
+      <h2>1. Practice Typing</h2>
+      <ul>
+        <li>Master the Art of Typewriting! Whether you're a beginner or looking to refine your skills, our Practice Yourself module guides you step-by-step from the basics—starting with the fundamentals like 'asdfghjkl;' to advanced key combinations. Start slow, build your speed, and become a typing pro at your own pace!"</li>
+       
+      </ul>
+    </div>
+    
+    <div class="feature animate__animated animate__fadeInUp animate__delay-1s">
+      <h2>2. Test Yourself</h2>
+      <ul>
+        <li>Challenge Your Speed and Accuracy! Ready to put your typing skills to the test? In the Test Yourself module, race against the clock with timed challenges that push your limits. After each test, see how many words per minute you've mastered and track your improvement. It's time to see how fast you can go!</li>
+      </ul>
+    </div>
+
+    <!-- Go Back Button -->
+    <a href="javascript:void(0);" class="go-back-button" onclick="window.history.back();">Go Back</a>
+    
+  </div>
+</body>
+</html>

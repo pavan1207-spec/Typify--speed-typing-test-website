@@ -1,0 +1,91 @@
+body {
+    background-color: rgb(209, 160, 67, 255);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  a {
+    color: inherit; /* Keeps the text color same as surrounding text */
+    text-decoration: none; /* Removes the underline */
+    animation: fadeIn 1s ease-in-out;
+  
+  }
+  
+  
+  h1 {
+    font-family: 'Dancing Script', cursive;
+    color: rgb(2, 2, 171);
+    font-size: 4rem; /* Default font size */
+    margin-bottom: 20px;
+    animation: fadeIn 3s ease-in-out;
+  }
+  
+  .firstp {
+    animation: fadeIn 4s ease-in-out;
+    font-size: 200%;
+    font-family: monospace;
+  }
+  
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  
+  .maindiv {
+     width: 100%;
+     animation: fadeIn 3s ease-in-out;
+  
+  }
+  
+  .option {
+     border-radius: 15px;
+     padding: 15px; /* Adjusted padding */
+     width: 40%; 
+     margin: 50px;
+     float: left;
+     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effect */
+     text-align: center;
+     font-family: cursive;
+     background-color: rgb(231, 66, 51);
+     animation: fadeIn 4s ease-in-out;
+     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Shadow effect */
+
+    }
+  
+   h3{
+    text-align: left;
+   } 
+  
+  
+  /* Hover effect */
+  .option:hover {
+     background-color: #f7f7f7;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+     transform: scale(1.05); /* Slightly scale up on hover */
+  }
+  
+  /* Animation for fading in */
+  @keyframes fadeIn {
+     from { opacity: 0; }
+     to { opacity: 1; }
+  }
+  
+  /* Add a loading animation */
+  @keyframes bounce {
+     from, to { transform: translateY(0); }
+     50% { transform: translateY(-10px); }
+  }
+  
+  /* Apply bounce animation to options on load */
+  .option {
+     animation: bounce 1s ease-in-out infinite alternate; /* Infinite bounce effect */
+  }

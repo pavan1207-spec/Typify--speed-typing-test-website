@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <style>
+        .bodyy{
+            background-image: url(./newnewnew.jpg);
+            background-repeat: no-repeat; 
+            background-size: 101%;  
+           
+        }
+        .logincont{
+            background-color: rgba(146, 130, 92, 0.8);
+            width: 25%;
+            height: 400px;
+            text-align: center;
+            margin-left: 63%;
+            margin-top: 4%;
+            border-radius: 15px; 
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Shadow effect */
+
+
+
+        }
+        .log{
+            font-size:x-large ;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .bu{
+            background-color: rgb(197, 133, 108) ;
+        }
+        #heading{
+
+            font-family: 'Dancing Script', cursive;
+            color: rgb(57, 38, 138);
+            padding-left: 72%;
+            margin-top: 3%;
+            font-size: 500%;
+        }
+        .bu {
+            background-color: #b86c43; /* Green background */
+            color: black;              /* White text */
+            width: 35%;
+            height: 4vh;        /* Padding around the text */
+            border: none;              /* Remove border */
+            border-radius: 10px;        /* Rounded corners */
+            cursor: pointer;       
+            font-family:Verdana, Geneva, Tahoma, sans-serif; 
+            font-size: small;   /* Pointer cursor on hover */
+        }
+
+        .bu:hover {
+            background-color: #56af5a; /* Darker green on hover */
+        }
+        input{
+            border-radius: 5px;
+            padding: 4px;
+            text-align: center;
+        }
+        .words{
+            padding-left: 60%;
+            font-family: monospace;
+            font-size: x-large;
+            
+        }
+       
+    </style>
+</head>
+<body class="bodyy">
+    <div>
+        <p id="heading">Typify</p>
+
+        <p class="words">Unlock the power of words at your 
+            fingertips<br>Practice typewriting and turn speed into skill!</p>
+    </div>
+
+    <div class="logincont"> <br>
+        <p class="log">Log In</p>
+        <br> <br>
+        <form action="login.php" method="post">
+            <input type="text" name="username" placeholder="Username" required> <br> <br>
+            <input type="password" name="password" placeholder="Password" required> <br> <br> <br>
+            <button type="submit" class="bu">Submit</button>
+        </form>
+        <br>
+
+        <a href="" style="color: aliceblue;">Forgot Password</a> <br> <br>
+        <a href="./register_page.html" style="color: aliceblue;">New user? Register here</a> <br> <br>
+    </div>
+        
+</body>
+</html>
+
